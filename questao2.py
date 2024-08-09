@@ -1,15 +1,14 @@
+def imprimir_pa(primeiro_termo, quantidade_termos, razao):
+    # Calcula e imprime cada termo da PA
+    for i in range(quantidade_termos):
+        termo_atual = primeiro_termo + i * razao
+        print(termo_atual, end=' ')
+    print()  # Para adicionar uma nova linha após imprimir todos os termos
 
-def soma_intervalo(a, b):
-    return sum(range(a, b + 1))
+# Exemplo de uso
+primeiro_termo = float(input("Informe o primeiro termo: "))
+quantidade_termos = int(input("Informe a quantidade de termos: "))
+razao = float(input("Informe a razão: "))
 
-try:
-    a = int(input("Digite o primeiro número inteiro (a): "))
-    b = int(input("Digite o segundo número inteiro (b): "))
-    
-    if a < b:
-        resultado = soma_intervalo(a, b)
-        print(f"A soma dos números inteiros no intervalo [{a}, {b}] é {resultado}.")
-    else:
-        print("Erro: o primeiro número deve ser menor que o segundo número.")
-except ValueError:
-    print("Erro: entrada inválida. Por favor, insira apenas números inteiros.")
+imprimir_pa(primeiro_termo, quantidade_termos, razao)
+
