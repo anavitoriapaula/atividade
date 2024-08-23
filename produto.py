@@ -1,11 +1,10 @@
-produtos []
+produtos = []
 whlile True:
-produto = input("digite o nome do produto")
+  produto = input("digite o nome do produto")
 produtos.append(produto)
-continuar = input("Deseja adicionar outro produto: ") (sim/não): ")
+continuar = input("Deseja adicionar outro produto: (sim/não): ")
   if continuar upper()!= "sim":
     break
-pront("\nLista de produtos eletronocos: ")
+print("\nLista de produtos eletronocos: ")
 for produto in produtos:
-print(produto")
-
+  print("-"+produto)
